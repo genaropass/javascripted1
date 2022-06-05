@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nucba Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Holi!</h1>
+            <p>Ingresa a la consola y vas a poder ver  el primer challenge de Javascript</p>
+            <p class="data">Podes hacerlo apretando F12 o con click derecho y en Inspeccionar</p>
+        </div>
+    </header>
+
+    <main>
+        <h2 data-aos="zoom-in-up">Aca esta el codigo</h2>
+        <p id="codigo" class="codigo" data-aos="zoom-in-down">let array = ["Salsa","Queso","Harina","Sal","Levadura","Agua","Tomate","Cebolla","Aceite", "Oregano",], <br>
+         ingredientPar = [],<br>
+         ingredientImpar = [];<br>
+          
+          let parinpar = (array) => {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; for (let i = 0; i < array.length; i++) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  if (array[i].length % 2 === 0) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ingredientPar.push(array[i]);<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {
+                        &nbsp;&nbsp; ingredientImpar.push(array[i]);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  }<br>
+                        &nbsp;&nbsp;&nbsp;  }<br>
+                        &nbsp;&nbsp;  };<br>
+                     parinpar(array);<br>
+          <br>
+          console.log(`Los ingredientes pares son: ${ingredientPar}.`);<br>
+          <br>
+          console.log(`Los ingrediente impares son: ${ingredientImpar}.`);<br>
+
+          </p>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
